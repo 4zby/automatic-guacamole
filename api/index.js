@@ -1,7 +1,7 @@
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
-const FLARE = process.env.FLARESOLVERR_URL; // مثال: http://YOUR_VPS_IP:8191/v1
+const FLARE = process.env.FLARESOLVERR_URL || 'http://161.97.175.212:8191/v1';
 
 function injectBase(html, url) {
   const base = `<base href="${url}">`;
